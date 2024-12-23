@@ -1,0 +1,86 @@
+
+body {
+background-color: rgb(34, 34, 34);
+}
+
+.site-wrapper2 {
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Roboto';
+}
+
+.text-section {
+display: flex;
+width: 30%;
+flex-direction: column;
+}
+
+.site-section {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+width: 80%;
+height: 80%;
+overflow: hidden;
+}
+
+.book-section {
+background: linear-gradient(40deg, rgb(97, 201, 141), rgba(201, 226, 216, 0.797));
+width: 26rem;
+height: 32rem;
+margin-top: 10rem;
+position: relative;
+}
+
+.info-part-con {
+display: flex;
+color: white;
+flex-direction: column;
+}
+
+.read-button {
+border: none;
+width: 11rem;
+height: 2.8rem;
+margin-top: 1rem;
+border-radius: 0.3rem;
+font-size: 1rem;
+cursor: pointer;
+}
+
+.data-info {
+background-color: rgb(47, 47, 47);    
+display: grid;
+grid-template-columns: repeat(2, 10rem);
+width: 100%;
+color: white;
+font-size: 0.8rem;
+justify-content: space-around;
+}
+
+.book-title {
+margin-top: 10rem;
+margin-bottom: 0;
+}
+
+.line2 {
+background-color: rgba(0, 0, 0, 0.396);
+height: 100%;
+width: 0.4rem;
+position: absolute;
+bottom: 0;
+left: 1rem;;
+}
+
+.book-text {
+display: grid;
+
+}
+
+.main-text {
+letter-spacing: 0.2;
+}
+
+
