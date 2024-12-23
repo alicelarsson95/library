@@ -1,6 +1,6 @@
 
 .site-wrapper {
-    display: none;
+display: block;
 }
 
 .books {
@@ -9,13 +9,11 @@ grid-template-columns: repeat(4, 13rem);
 grid-template-rows: auto;
 align-content: center;
 justify-self: center;
-height: 80vh;
-width: 61vw;
 gap: 1rem;
-
 }
 
 .book {
+position: relative;
 display: flex;                 
 flex-direction: column;        
 justify-content: flex-end;     
@@ -44,14 +42,16 @@ h1 {
 font-size: 2.5rem;
 font-family: 'Roboto';
 display: flex;
+justify-content:center;
 }
 
 .line {
-background-color: rgba(0, 0, 0, 0.261);
-height: 16rem;
-width: 0.12rem;
 position: absolute;
-margin-right: 11.4rem;
+background-color: rgba(0, 0, 0, 0.337);
+height: 100%;
+width: 0.1rem;
+top: 0;  
+left: 5%; 
 }
 
 .book-1 {
