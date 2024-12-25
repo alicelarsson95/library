@@ -65,10 +65,10 @@ const displayBooks = (bookInfo: Book[]): void => {
         bookElement.appendChild(bookTitle);
         bookElement.appendChild(bookAuthor);
 
-        // Skapa linjen dynamiskt för varje bok
+
         const line = document.createElement('div');
         line.classList.add('line');
-        bookElement.appendChild(line); // Lägg till linjen till boken
+        bookElement.appendChild(line); 
 
         booksCon.appendChild(bookElement);
 
