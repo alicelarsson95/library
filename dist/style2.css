@@ -1,124 +1,130 @@
 body {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .site-wrapper2 {
-display: none;
-justify-content: center;
-align-items: center;
-font-family: 'Roboto';
-width:100%;
-height: 100%;
-background-color: rgb(34, 34, 34);    
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(34, 34, 34);
 }
 
 .text-section {
-display: flex;
-width: 30%;
-flex-direction: column;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
 }
 
 .site-section {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 2rem;
-width: 100vw;
-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100vw;
+  height: 100vh;
 }
 
 .book-section {
-background: linear-gradient(40deg, rgb(97, 201, 141), rgba(201, 226, 216, 0.797));
-width: 26rem;
-height: 32rem;
-margin-top: 2rem;
-position: relative;
+  background: linear-gradient(40deg, rgb(97, 201, 141), rgba(201, 226, 216, 0.797));
+  width: 26rem;
+  height: 32rem;
+  margin-top: 2rem;
+  position: relative;
 }
 
 .info-part-con {
-display: flex;
-color: white;
-flex-direction: column;
+  display: flex;
+  color: white;
+  flex-direction: column;
 }
 
 .read-button {
-border: none;
-width: 11rem;
-height: 2.8rem;
-margin-top: 3rem;
-border-radius: 0.3rem;
-font-size: 1rem;
-cursor: pointer;
+  border: none;
+  width: 11rem;
+  height: 2.8rem;
+  margin-top: 3rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .data-info {
-background-color: rgb(47, 47, 47);    
-display: grid;
-grid-template-columns: repeat(2, 10rem);
-width: 70%;
-color: white;
-font-size: 0.8rem;
-justify-content: space-around;
+  background-color: rgb(47, 47, 47);
+  display: grid;
+  grid-template-columns: repeat(2, 10rem);
+  width: 70%;
+  color: white;
+  font-size: 0.8rem;
+  justify-content: space-around;
 }
 
 .line2 {
-background-color: rgba(0, 0, 0, 0.396);
-height: 100%;
-width: 0.4rem;
-position: absolute;
-bottom: 0;
-left: 1rem;;
-}
-
-.book-text {
-display: flex;
-height: 100%;
-width: 100%;
-justify-content: flex-end;
-flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.396);
+  height: 100%;
+  width: 0.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
 }
 
 .book-title-black {
-display: flex;
-width: 90%;
-margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .book-author-black {
-display: flex;
-width: 70%;
-margin-left: 3rem;
-font-weight: 300;
-margin-bottom: 2.5rem;
-font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 3rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+.book-text {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .main-text {
-letter-spacing: 0.2;
-width: 70%;
+  letter-spacing: 0.2;
+  width: 70%;
 }
 
 .back-button {
-width: 3.5rem;         
-height: 3.5rem;          
-border-radius: 50%;    
-font-size: 2.8rem;
-background-color: #707070;              
-display: flex;         
-justify-content: center; 
-border: none;         
-cursor: pointer;       
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 2.8rem;
+  background-color: #707070;
+  display: flex;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
 }
 
 .book-title {
-    display: flex;
-    justify-content: flex-start;
-    margin:0;
-
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
 }
 
 .book-author {
-    gap:0;
+  gap: 0;
 }
