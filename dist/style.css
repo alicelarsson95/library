@@ -22,14 +22,14 @@ width: 13rem;
 height: 16rem;
 font-family: 'Roboto';
 color: white;
-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.126);
+box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.177);
 cursor: pointer;
 }
 
 .book-header {
 font-size: 1.1rem;
 margin: 0;
-width: 62%;
+width: 67%;
 }
 
 .book-subheader {
@@ -86,3 +86,8 @@ background: linear-gradient(40deg, rgb(97, 201, 141), rgba(110, 220, 172, 0.552)
 background: linear-gradient(40deg, rgb(48, 143, 88), rgba(99, 216, 166, 0.478));
 }
 
+.book-1:hover, .book-2:hover, .book-3:hover, .book-4:hover, 
+.book-5:hover, .book-6:hover, .book-7:hover, .book-8:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease, background 0.5s ease;
+}

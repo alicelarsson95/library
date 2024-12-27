@@ -8,19 +8,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 const bookElements = {
-    startSite: document.querySelector('.site-wrapper'),
-    bookSite: document.querySelector('.site-wrapper2'),
-    booksCon: document.querySelector('.books'),
-    bookHeader: document.querySelector('.book-title'),
-    bookAuthor: document.querySelector('.book-author'),
-    bookHeaderTwo: document.querySelector('.book-title-black'),
-    bookAuthorTwo: document.querySelector('.book-author-black'),
-    bookDescription: document.querySelector('.main-text'),
-    bookAudience: document.querySelector('.info-audience'),
-    bookPublished: document.querySelector('.info-published'),
-    bookPages: document.querySelector('.info-pages'),
-    bookPublisher: document.querySelector('.info-publisher'),
-    backButton: document.querySelector('.back-button')
+    startSite: document.querySelector(".site-wrapper"),
+    bookSite: document.querySelector(".site-wrapper2"),
+    booksCon: document.querySelector(".books"),
+    bookHeader: document.querySelector(".book-title"),
+    bookAuthor: document.querySelector(".book-author"),
+    bookHeaderTwo: document.querySelector(".book-title-black"),
+    bookAuthorTwo: document.querySelector(".book-author-black"),
+    bookDescription: document.querySelector(".main-text"),
+    bookAudience: document.querySelector(".info-audience"),
+    bookPublished: document.querySelector(".info-published"),
+    bookPages: document.querySelector(".info-pages"),
+    bookPublisher: document.querySelector(".info-publisher"),
+    backButton: document.querySelector(".back-button"),
 };
 const getApiData = () => __awaiter(this, void 0, void 0, function* () {
     const url = "https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books";
@@ -42,35 +42,34 @@ const displayBooks = (bookInfo) => {
     const booksCon = bookElements.booksCon;
     if (!booksCon)
         return;
-    booksCon.innerHTML = '';
+    booksCon.innerHTML = "";
     bookInfo.forEach((book, index) => {
-        const bookElement = document.createElement('article');
-        bookElement.classList.add('book');
+        const bookElement = document.createElement("article");
+        bookElement.classList.add("book");
         bookElement.classList.add(`book-${index + 1}`);
-        const bookTitle = document.createElement('h2');
-        bookTitle.classList.add('book-header');
+        const bookTitle = document.createElement("h2");
+        bookTitle.classList.add("book-header");
         bookTitle.innerText = book.title;
-        const bookAuthor = document.createElement('h3');
-        bookAuthor.classList.add('book-subheader');
+        const bookAuthor = document.createElement("h3");
+        bookAuthor.classList.add("book-subheader");
         bookAuthor.innerText = book.author;
         bookElement.appendChild(bookTitle);
         bookElement.appendChild(bookAuthor);
-        // Skapa linjen dynamiskt för varje bok
-        const line = document.createElement('div');
-        line.classList.add('line');
-        bookElement.appendChild(line); // Lägg till linjen till boken
+        const line = document.createElement("div");
+        line.classList.add("line");
+        bookElement.appendChild(line);
         booksCon.appendChild(bookElement);
-        bookElement.addEventListener('click', () => {
+        bookElement.addEventListener("click", () => {
             displayBookInfo(book);
         });
     });
 };
 const displayBookInfo = (book) => {
     if (bookElements.startSite) {
-        bookElements.startSite.style.display = 'none';
+        bookElements.startSite.style.display = "none";
     }
     if (bookElements.bookSite) {
-        bookElements.bookSite.style.display = 'block';
+        bookElements.bookSite.style.display = "block";
     }
     if (bookElements.bookHeader) {
         bookElements.bookHeader.innerText = book.title;
@@ -106,17 +105,17 @@ const loadBooks = () => __awaiter(this, void 0, void 0, function* () {
         displayBooks(books);
     }
     else {
-        console.error('Failed to load books');
+        console.error("Failed to load books");
     }
 });
 loadBooks();
 if (bookElements.backButton) {
-    bookElements.backButton.addEventListener('click', () => {
+    bookElements.backButton.addEventListener("click", () => {
         if (bookElements.startSite) {
-            bookElements.startSite.style.display = 'block';
+            bookElements.startSite.style.display = "block";
         }
         if (bookElements.bookSite) {
-            bookElements.bookSite.style.display = 'none';
+            bookElements.bookSite.style.display = "none";
         }
     });
 }
