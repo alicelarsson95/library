@@ -56,7 +56,7 @@ body {
   background-color: rgb(47, 47, 47);
   display: grid;
   grid-template-columns: repeat(2, 10rem);
-  width: 70%;
+  width: 80%;
   color: white;
   font-size: 0.8rem;
   justify-content: space-around;
